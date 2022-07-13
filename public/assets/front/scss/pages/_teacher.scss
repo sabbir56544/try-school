@@ -1,0 +1,101 @@
+/*-------------------------------
+  Teacher Page CSS Start
+--------------------------------*/
+.teacher-page{
+    .about-instructor{
+        margin-top: 30px;
+        .about-instructor-content{
+            display: flex;
+            .about-left-content{
+                max-width: 30%;
+                flex: 30%;
+                .images{
+                    img{
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                    }
+                }
+                .info-list{
+                    margin-top: 10px;
+                    li{
+                        font-size: 14px;
+                        line-height: 24px;
+                        margin-bottom: 5px;
+                        i{
+                            font-size: 13px;
+                            width: 20px;
+                        }
+                        span{
+                            font-weight: 700;
+                        }
+                    }
+                }
+                
+              .social-links {
+                margin-top: 10px;
+
+                li {
+                  display: inline-block;
+
+                  a {
+                    display: inline-block;
+                    width: 25px;
+                    height: 25px;
+                    line-height: 25px;
+                    background: #555;
+                    border-radius: 3px;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 12px;
+                    transition: $transition;
+
+                    &:hover {
+                      background: $base-color;
+                    }
+                  }
+                }
+              }
+            }
+            .about-right-content{
+                max-width: 70%;
+                flex: 70%;
+                .name{
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 34px;
+                    margin-bottom: 0px;
+                }
+                .job-title{
+                    font-size: 14px;
+                    line-height: 24px;
+                    font-weight: 600;
+                }
+                .about-description{
+                    font-size: 14px;
+                    line-height: 24px; 
+                }
+            }
+        }
+    }
+    .all-videos{
+        padding: 50px 0px;
+        .single-course{
+            margin-bottom: 30px;
+        }
+    }
+}
+/*-------------------------------
+  Teacher Page CSS End
+--------------------------------*/
+
+
+
+
+
+
+
+
+
+
+

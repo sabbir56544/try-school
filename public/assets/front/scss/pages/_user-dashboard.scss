@@ -1,0 +1,679 @@
+/*-------------------------------
+  User Dashboard CSS Start
+--------------------------------*/
+
+.user-dashboard {
+    padding-bottom: 70px;
+
+    .user-dashboard-menu-area {
+        background: rgb(41, 26, 68);
+        padding: 62px 0px 0px;
+        .heading-title {
+            color: #fff;
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 600;
+            margin-bottom: 29px;
+        }
+        .menu-list {
+            position: relative;
+            top: 30px;
+            background: #fff;
+            padding: 15px 20px;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            li {
+                display: inline-block;
+                a {
+                    color: $heading-color;
+                    display: block;
+                    margin-right: 5px;
+                    margin-bottom: 0px;
+                    padding: 4px 20px;
+                    border-radius: 3px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    transition: $transition;
+                    margin: 2px;
+                    &.active,
+                    &:hover {
+                        background: $base-color;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .user-dashboard-content-area {
+        padding-top: 80px;
+        .filter-area {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 30px;
+            .left {
+                select {
+                    padding: 7px 15px;
+                    font-size: 14px;
+                    border: 1px solid rgba(0, 0, 0, 0.15);
+                    border-radius: 3px;
+                }
+            }
+            .right {
+                form {
+                    position: relative;
+                    input {
+                        height: 37px;
+                        padding: 0px 40px 0px 15px;
+                        font-size: 14px;
+                        border: 1px solid rgba(0, 0, 0, 0.15);
+                        border-radius: 3px;
+                    }
+                    button {
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                        height: 37px;
+                        width: 37px;
+                        background: none;
+                        border: 0px;
+                        color: #777;
+                        border-radius: 3px;
+                        transition: $transition;
+
+                        &:hover {
+                            background: $base-color;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .all-videos {
+            .single-course {
+                margin-bottom: 30px;
+                .content {
+                    .progress {
+                        height: 7px;
+                        background: #ddd;
+                        .progress-bar {
+                            background-color: $base-color !important;
+                        }
+                    }
+                    .progress-completed {
+                        font-size: 13px;
+                        padding-top: 4px;
+                    }
+                    .reating-area {
+                        margin-top: 5px;
+                        display: flex;
+                        justify-content: space-between;
+                        .stars {
+                            i {
+                                font-size: 14px;
+                            }
+                        }
+                        .total-star {
+                            color: $heading-color;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    .important-links {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 10px;
+                        .mybtn1 {
+                            box-shadow: none !important;
+                            font-size: 14px;
+                            padding: 5px 15px;
+                        }
+                    }
+                }
+            }
+            &.wishlists {
+                .single-course {
+                    .img {
+                        position: relative;
+                        .remove {
+                            position: absolute;
+                            width: 22px;
+                            height: 22px;
+                            border-radius: 50%;
+                            background: #fff;
+                            top: 5px;
+                            right: 5px;
+                            z-index: 9;
+                            text-align: center;
+                            line-height: 23px;
+                            font-size: 12px;
+                            color: #555;
+                            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                            transition: $transition;
+                            &:hover {
+                                background: $base-color;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .content {
+                        .reating-area {
+                            justify-content: start;
+                            margin-top: 0px;
+                            .stars {
+                                margin: 0px 5px;
+                                i {
+                                    font-size: 12px;
+                                }
+                            }
+                            .total-star {
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .custom-chatbox {
+            #chat-container {
+                width: 100%;
+                height: 800px;
+                background: #e9ecef;
+                margin: 0 auto;
+                font-size: 0;
+                border-radius: 5px;
+                overflow: hidden;
+                aside {
+                    width: 30%;
+                    height: 800px;
+                    background-color: #291a44;
+                    display: inline-block;
+                    font-size: 15px;
+                    vertical-align: top;
+                    header {
+                        padding: 30px 20px;
+                        input {
+                            width: 100%;
+                            height: 50px;
+                            line-height: 50px;
+                            padding: 0 50px 0 20px;
+                            background-color: #5e616a;
+                            border: none;
+                            border-radius: 3px;
+                            color: #fff;
+                            background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_search.png);
+                            background-repeat: no-repeat;
+                            background-position: 97%;
+                            background-size: 40px;
+
+                            &::placeholder {
+                                color: #fff;
+                            }
+                        }
+                    }
+                    ul {
+                        padding-left: 0;
+                        margin: 0;
+                        list-style-type: none;
+                        overflow-y: scroll;
+                        height: 690px;
+                        li {
+                            padding: 10px 0;
+                            &:hover {
+                                background-color: #5e616a;
+                            }
+                            h2,
+                            h3 {
+                                margin: 0;
+                            }
+                            img {
+                                border-radius: 50%;
+                                margin-left: 20px;
+                                margin-right: 8px;
+                            }
+                            div {
+                                display: inline-block;
+                                vertical-align: top;
+                                margin-top: 12px;
+                            }
+                            h3 {
+                                font-size: 12px;
+                                color: #7e818a;
+                                font-weight: normal;
+                            }
+                            h2 {
+                                font-size: 14px;
+                                color: #fff;
+                                font-weight: normal;
+                                margin-bottom: 5px;
+                            }
+                            .status {
+                                width: 8px;
+                                height: 8px;
+                                border-radius: 50%;
+                                display: inline-block;
+                                margin-right: 7px;
+                            }
+                            .green {
+                                background-color: #58b666;
+                            }
+                            .orange {
+                                background-color: #ff725d;
+                            }
+                            .blue {
+                                background-color: #6fbced;
+                                margin-right: 0;
+                                margin-left: 7px;
+                            }
+                        }
+                    }
+                }
+                main {
+                    width: 70%;
+                    height: 800px;
+                    display: inline-block;
+                    font-size: 15px;
+                    vertical-align: top;
+                    header>* {
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+                    header {
+                        height: 110px;
+                        padding: 30px 20px 30px 40px;
+                        img:first-child {
+                            border-radius: 50%;
+                        }
+                        img:last-child {
+                            width: 24px;
+                            margin-top: 8px;
+                        }
+                        div {
+                            margin-left: 10px;
+                            margin-right: 145px;
+                        }
+                        h2 {
+                            font-size: 16px;
+                            margin-bottom: 5px;
+                        }
+                        h3 {
+                            font-size: 14px;
+                            font-weight: normal;
+                            color: #7e818a;
+                        }
+                    }
+                    #chat {
+                        padding-left: 0;
+                        margin: 0;
+                        list-style-type: none;
+                        overflow-y: scroll;
+                        height: 535px;
+                        border-top: 2px solid #fff;
+                        border-bottom: 2px solid #fff;
+                        li {
+                            padding: 10px 30px;
+                            h2,
+                            h3 {
+                                display: inline-block;
+                                font-size: 13px;
+                                font-weight: normal;
+                            }
+                            h3 {
+                                color: #bbb;
+                            }
+                            .entete {
+                                margin-bottom: 5px;
+                            }
+                            .message {
+                                padding: 20px;
+                                color: #fff;
+                                line-height: 25px;
+                                max-width: 90%;
+                                display: inline-block;
+                                text-align: left;
+                                border-radius: 5px;
+                            }
+                            &.me {
+                                text-align: right;
+                            }
+                            &.you .message {
+                                background-color: #58b666;
+                            }
+                            &.me .message {
+                                background-color: #6fbced;
+                            }
+                            .triangle {
+                                width: 0;
+                                height: 0;
+                                border-style: solid;
+                                border-width: 0 10px 10px 10px;
+                            }
+                            &.you .triangle {
+                                border-color: transparent transparent #58b666 transparent;
+                                margin-left: 15px;
+                            }
+                            &.me .triangle {
+                                border-color: transparent transparent #6fbced transparent;
+                                margin-left: 95%;
+                            }
+                        }
+                    }
+                    footer {
+                        height: 155px;
+                        padding: 20px 30px 10px 20px;
+                        textarea {
+                            resize: none;
+                            border: none;
+                            display: block;
+                            width: 100%;
+                            height: 80px;
+                            border-radius: 3px;
+                            padding: 20px;
+                            font-size: 13px;
+                            margin-bottom: 13px;
+
+                            &::placeholder {
+                                color: #ddd;
+                            }
+                        }
+                        img {
+                            height: 30px;
+                            cursor: pointer;
+                        }
+                        .mybtn1 {
+                            float: right;
+                            padding: 3px 15px;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            box-shadow: none;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .purchase-list {
+            .table {
+                tbody {
+                    td {
+                        .image {
+                            max-width: 120px;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .title {
+                            font-size: 15px;
+                            line-height: 25px;
+                            font-weight: 600;
+                            max-width: 280px;
+                            margin-bottom: 0px;
+                        }
+                        .date,
+                        .price,
+                        .payment-type {
+                            font-size: 14px;
+                        }
+                        .price {
+                            font-weight: 600;
+                        }
+                        .mybtn1 {
+                            padding: 4px 14px;
+                            box-shadow: none;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .pagination-wrapper {
+                margin-top: 30px;
+                display: block;
+                text-align: center;
+                .pagination {
+                    margin-top: 0px;
+                    text-align: center;
+                    display: block;
+                    li {
+                        display: inline-block;
+                        .page-link {
+                            color: $base-color;
+                        }
+                        &.disabled {
+                            span {
+                                color: #ccc !important;
+                            }
+                        }
+                        &.active {
+                            .page-link {
+                                background-color: $base-color;
+                                border-color: $base-color;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .product-invoice {
+            main {
+                header{
+                    display: block;
+                    text-align: right;
+                    margin-bottom: 15px;
+                    .mybtn1{
+                        font-size: 14px;
+                        padding: 7px 15px;
+                    }
+                }
+                .inner-container {
+                    max-width: 100%;
+                }
+                table.invoice {
+                    background: #fff;
+                    tr,
+                    td {
+                        background: #fff;
+                        text-align: left;
+                        font-weight: 400;
+                        color: #322d28;
+                    }
+                    tr.header {
+                        td {
+                            background: #fcfbff;
+                            img {
+                                max-width: 200px;
+                            }
+                            h2 {
+                                text-align: right;
+                                font-weight: 700;
+                                font-size: 24px;
+                                line-height: 34px;
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                    tr.intro {
+                        td:nth-child(2) {
+                            text-align: right;
+                        }
+                        td{
+                            font-size: 14px;
+                            line-height: 25px;
+                            padding: 20px 10px;
+                        }
+                        strong{
+                            margin-right: 3px;
+                        }
+                    }
+                    tr.details>td {
+                       padding: 0px;
+                       margin: 0px;
+                    }
+                    tr.details {
+                        .table{
+                            margin-bottom: 0px;
+                            tr{
+                                th{
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    border-top: 1px;
+                                    border-bottom: 1px;
+                                    background: #fcfbff;
+                                }
+                                td{
+                                    font-size: 14px;
+                                    border-bottom: 1px solid #dee2e6;
+                                }
+                            }
+                        }
+                        td:last-child,
+                        th:last-child {
+                            text-align: right;
+                        }
+                    }
+                    tr.totals {
+                        td {
+                            padding: 0;
+                            border-top: 0px;
+                        }
+                        table {
+                            padding: 0px;
+                            margin: 0px;
+                            tr {
+                                td {
+                                    padding: 0;
+                                    padding-bottom: 0;
+                                    border-top: 1px solid #dee2e6;
+                                    font-size: 14px;
+                                    line-height: 36px;
+                                    &.label{
+                                        font-weight: 600;
+                                        color: $heading-color;
+                                    }
+                                    &.num{
+                                        text-align: right;
+                                    }
+                                }
+                                &.total{
+                                    td {
+                                        border-top: 1px solid $base-color;
+                                        &.label{
+                                            font-weight: 700;
+                                            font-size: 16px;
+                                            color: $heading-color;
+                                        }
+                                        &.num{
+                                            color: $base-color;
+                                            font-weight: 700;
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                                &:first-child{
+                                    td{
+                                        border-top: 0px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .additional-info {
+                    background: #fcfbff;
+                    border: 1px solid #dee2e6;
+                    padding: 20px 20px;
+                    h5 {
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: $heading-color;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 24px;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+        .user-profile-area{
+            aside{
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                height: 100%;
+                .image{
+                    text-align: center;
+                    img{
+                        width: 100px;
+                        border-radius: 50%;
+                        display: inline-block;
+                        border: 4px solid #fff;
+                        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+                    }
+                }
+                .menu{
+                    border-top: 1px solid rgba(0, 0, 0, 0.1);
+                    margin-top: 20px;
+                    padding-top: 15px;
+                    li{
+                        a{
+                            display: block;
+                            font-size: 14px;
+                            line-height: 30px;
+                            color: $heading-color;
+                            transition: $transition;
+                            i{
+                                font-size: 12px;
+                                font-size: #666;
+                                margin-right: 4px;
+                            }
+                            &.active,
+                            &:hover
+                            {
+                                color: $base-color;
+                            }
+                        }
+                    }
+                }
+            }
+            main{
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                height: 100%;
+                header{
+                    text-align: center;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                    margin-bottom: 20px;
+                    padding-bottom: 13px;
+                    .title{
+                        display: inline-block;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 34px;
+                    }
+                }
+                .content{
+                    
+                    label,
+                    input,
+                    textarea
+                    {
+                        font-size: 14px;
+                    }
+                    label{
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*-------------------------------
+  User Dashboard CSS End
+--------------------------------*/

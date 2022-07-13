@@ -1,0 +1,37 @@
+
+/*
+
+
+
+*/
+
+
+@import "main/_variables";
+@import "main/_mixins";
+@import "main/_global";
+@import "main/_normalize";
+
+//=Section scss
+@import "sections/_main-menu";
+@import "sections/_home-front-area";
+@import "sections/_footer";
+
+
+//=Page scss
+@import "pages/_details";
+@import "pages/_blog";
+@import "pages/_contact";
+@import "pages/_faq";
+@import "pages/_categories";
+@import "pages/_course-details";
+@import "pages/_course-videos";
+@import "pages/_teacher";
+@import "pages/_user-dashboard";
+
+
+
+
+
+
+
+

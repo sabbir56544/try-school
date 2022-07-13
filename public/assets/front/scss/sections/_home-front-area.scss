@@ -1,0 +1,806 @@
+/*-------------------------------
+  Hero  Area CSS Start
+--------------------------------*/
+
+.hero-area {
+	.intro-content{
+			height: 550px;
+			background-size: cover!important;
+			background-position: center!important;
+			background-repeat: no-repeat!important;
+			position: relative;
+			display: flex;
+			align-self: center;
+			align-items: center;
+		.slider-content{
+			background: #fff;
+			border-radius: 4px;
+			max-width: 450px;
+			padding: 25px 30px 30px;
+			box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+			margin-top: -60px;
+				.title{
+					font-size: 34px;
+					line-height: 44px;
+					font-weight: 700;
+				}
+			}
+			.layer-3{
+				.serch-form2{
+					position: relative;
+					form{
+						input{
+							width: 100%;
+							height: 40px;
+							border: 1px solid rgba(0, 0, 0, 0.1);
+							padding: 0px 40px 0px 20px;
+							&::placeholder {
+								color: #bbb !important;
+							  }
+							  &::-webkit-placeholder {
+								color: #bbb !important;
+							  }
+						}
+						button{
+							position: absolute;
+							right: 0px;
+							top: 0px;
+							height: 40px;
+							width: 40px;
+							background: none;
+							border: 0px;
+							color: #555;
+						}
+					}
+				}
+			}
+	
+	}
+}
+
+
+/*-------------------------------
+  Hero  Area CSS End
+--------------------------------*/
+
+
+/*-------------------------------
+  Feature  Area CSS Start
+--------------------------------*/
+.feature-section{
+	.feature-section-inner{
+		background: #fff;
+		margin-top: -60px;
+		box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+		padding: 30px 30px 30px;
+		border-radius: 4px;
+		.single-feature{
+			display: flex;
+			.left-icon{
+				width: 50px;
+				margin-right: 30px;
+			}
+			.right-content{
+				flex: 1;
+				.title{
+					font-size: 20px;
+					font-weight: 700;
+					margin-bottom: 0px;
+				}
+				p{
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+}
+
+
+/*-------------------------------
+  Feature  Area CSS End
+--------------------------------*/
+
+/*-------------------------------
+  Tab Product  Area CSS Start
+--------------------------------*/
+.tab-product-section{
+	padding-top: 70px;
+	.top-heading-area{
+		margin-bottom: 22px;
+		.title{
+			font-size: 24px;
+			line-height: 34px;
+			font-weight: 700;
+			display: inline-block;
+			position: relative;
+			margin-bottom: 0px;
+			padding-bottom: 7px;
+		}
+	}
+	.product-tabs{
+		.nav{
+			display: block;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			margin-bottom: 20px;
+			li{
+				display: inline-block;
+				a{
+					display: block;
+					font-weight: 600;
+					padding: 0px;
+					padding-bottom: 6px;
+					margin: 0px 7px;
+					position: relative;
+					transition: $transition;
+					color: $heading-color;
+					&::before{
+						position: absolute;
+						content: '';
+						bottom: -1px;
+						left: 0px;
+						width: 100%;
+						height: 2px;
+						background: $base-color;
+						opacity: 0;
+					}
+					&.active{
+						&::before{
+							opacity: 1;
+						}
+					}
+				}
+				&:first-child{
+					a{
+						margin-left: 0px;
+					}
+				}
+			}
+		}
+	}
+	.slick-product-slider{
+		position: relative;
+	}
+	.slick-slider {
+		margin:0 -15px;
+	}
+	.slick-slide {
+		margin-right:15px;
+		margin-left:15px;
+	}
+	.slick-prev,
+	.slick-next{
+		font-size: 0px;
+		&:focus{
+			outline: 0px;
+		}
+		&:hover{
+			&::before,
+			&::after{
+				color: $base-color;
+			}
+		}
+	}
+	.slick-next{
+		position: absolute;
+		top: 25%;
+		right: -0px;
+		z-index: 5;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 50%;
+		background: #fff;
+		border: 0px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	}
+	.slick-prev{
+		position: absolute;
+		top: 25%;
+		z-index: 5;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 50%;
+		background: #fff;
+		border: 0px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	}
+	.slick-prev:before {
+		font-family: 'Font Awesome 5 Free';
+		content: "\f053";
+		color: #555;
+		font-size: 18px;
+		font-weight: 900;
+		transition: $transition;
+	}
+	.slick-next:before {
+	content: "\f054";
+	font-family: 'Font Awesome 5 Free';
+	color: #555;
+	font-size: 18px;
+	font-weight: 900;
+	transition: $transition;
+	}
+	.tab-content>.tab-pane{ display: block; height: 0px; }
+	.tab-content>.active{ height: auto;}
+}
+
+/*-------------------------------
+  Tab Product  Area CSS End
+--------------------------------*/
+
+
+/*-------------------------------
+  Product  Area CSS Start
+--------------------------------*/
+.product-section{
+	padding-top: 70px;
+	.owl-carousel{
+		.owl-nav{
+			.owl-prev,
+			.owl-next {
+			  font-size: 13px;
+			  position: absolute;
+			  top: -40px;
+			  -webkit-transform: translateY(-50%);
+			  -ms-transform: translateY(-50%);
+			  transform: translateY(-50%);
+			  text-align: center;
+			  width: 20px;
+			  height: 20px;
+			  line-height: 19px;
+			  opacity: 1;
+			  background: #fff;
+			  border: 1px solid #ff5500;
+			  border-radius: 50%;
+			  color: #ff5500;
+			  -webkit-box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+			  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+			  -webkit-transition: 0.3s ease-in;
+			  -moz-transition: 0.3s ease-in;
+			  -o-transition: 0.3s ease-in;
+			  transition: 0.3s ease-in;
+			  &:hover{
+				  background: $base-color;
+				  color: #fff;
+			  }
+			}
+			.owl-prev{
+				right: 25px;
+			}
+			.owl-next {
+				right: 0px;
+			}
+		}
+	}
+}
+.single-course{
+	border: 1px solid rgba(0, 0, 0, 0.178);
+	transition: $transition;
+	.img{
+		position: relative;
+		overflow: hidden;
+		img{
+			width: 100%;
+			transition: $transition;
+		}
+		&::before{
+			position: absolute;
+			content: '';
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.4);
+			z-index: 9;
+			transition: $transition;
+			opacity: 0;
+		}
+		
+	}
+	.content{
+		padding: 10px 10px;
+		.author{
+			font-size: 13px;
+			margin-bottom: 4px;
+		}
+		.title{
+			font-size: 14px;
+			line-height: 20px;
+			font-weight: 700;
+			height: 40px;
+		}
+		.reating-area{
+			.number{
+				display: inline-block;
+				font-size: 14px;
+				font-weight: 700;
+				color: #be5a0e;
+			}
+			.stars{
+				display: inline-block;
+				font-size: 14px;
+				font-weight: 700;
+				color: #eb8a2f;
+				font-size: 13px;
+
+			}
+			.total-star{
+				display: inline-block;
+				font-size: 14px;
+				font-weight: 400;
+
+			}
+		}
+		
+		.price{
+			font-weight: 700;
+			margin-bottom: 0px;
+			margin-top: 3px;
+			del{
+				font-size: 13px;
+				font-weight: 400;
+			}
+		}
+	}
+	&:hover{
+		border: 1px solid $base-color;
+		.img{
+			img{
+				transform: scale(1.1);
+			}
+			&::before{
+				opacity: 1;
+			}
+		}
+	}
+}
+/*-------------------------------
+  Product  Area CSS End
+--------------------------------*/
+
+/*-------------------------------
+  Categories  Area CSS Start
+--------------------------------*/
+.category-section{
+	.category-list{
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -10px;
+		margin-right: -10px;
+		li{
+			max-width: 25%;
+			flex: 25%;
+			padding-left: 10px;
+			padding-right: 10px;
+			a{
+				background: #fff;
+				border: 1px solid rgba(0, 0, 0, 0.1);
+				margin-bottom: 20px;
+				display: block;
+				padding: 15px 20px;
+				img{
+					width: 35px;
+					margin-right: 20px;
+				}
+				font-weight: 700;
+				transition: $transition;
+				&:hover{
+					border: 1px solid $base-color;
+					color: $base-color;
+					box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+				}
+			}
+		}
+	}
+}
+/*-------------------------------
+  Categories  Area CSS End
+--------------------------------*/
+
+/*-------------------------------
+  Become Author  Area CSS Start
+--------------------------------*/
+.become-author-section{
+	.left-img{
+		text-align: center;
+		img{
+			display: inline-block;
+			max-width: 100%;
+		}
+	}
+	.content{
+		.title{
+			font-size: 30px;
+			line-height: 40px;
+			font-weight: 700;
+			margin-bottom: 16px;
+		}
+		.mybtn1{
+			margin-top: 10px;
+		}
+	}
+}
+#bcomeinstructormodal{
+	.modal-header{
+		background: $base-color;
+		.modal-title{
+			color: #fff;
+			font-weight: 600;
+		}
+		.close{
+			color: #fff;
+		}
+	}
+	form{
+		label,
+		input,
+		textarea
+		{
+			font-size: 14px;
+		}
+		label{
+			font-weight: 600;
+		}
+	}
+}
+/*-------------------------------
+  Become Author  Area CSS End
+--------------------------------*/
+
+/*-------------------------------
+Blog Area CSS Start
+--------------------------------*/
+	.blog {
+		  .view-all-btn{
+			  display: inline-block;
+			  margin-top: 20px;
+			  font-size: 14px;
+			  color: rgb(143, 143, 143);
+			  font-weight: 700;
+			  text-decoration: underline;
+			  transition: $transition;
+			  &:hover{
+				  color: $base-color;
+			  }
+		  }
+	}
+	.single-blog {
+		background: #fff;
+		display: block;
+		box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+		transition: $transition;
+		.img{
+			position: relative;
+			top: 0px;
+			left: 0px;
+			border-radius: 10px;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+			&::before{
+				position: absolute;
+				content: "";
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.3);
+				border-radius: 10px;
+				transition: $transition;
+			}
+			img{
+				border-radius: 10px;
+			}
+		}
+
+		.content {
+			padding: 23px 15px 11px;
+
+			.title {
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 22px;
+				margin-bottom: 8px;
+				transition: $transition;
+				color: $heading-color;
+			}
+			.text{
+				p{
+					font-size: 14px;
+					margin-bottom: 2px;
+				}
+			}
+			.top-meta {
+				margin-bottom: 0px;
+
+				li {
+					display: inline-block;
+					margin-right: 10px;
+
+					span {
+						font-size: 14px;
+						color: $body-color;
+						margin-bottom: 0px;
+
+						i {
+							color: $base-color;
+							font-size: 12px;
+						}
+					}
+				}
+			}
+		}
+		&:hover{
+			transform: translateY(-7px);
+			.img{
+				&::before{
+					background: rgba(0, 0, 0, 0.0);
+				}
+			}
+		}
+	}
+/*-------------------------------
+Blog Area CSS End
+--------------------------------*/
+
+  
+/*---------------------------
+** LOgin Signup  Area Start
+---------------------------*/
+.new-login {
+	padding: 100px 0px 100px;
+  }
+  .new-login .new-login-box {
+	position: relative;
+	min-height: 600px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+	background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+  }
+  @keyframes gradient {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+  }
+  .new-login .new-login-box::before {
+	position: absolute;
+	content: "";
+	background: #fff;
+	left: 3%;
+	top: 3%;
+	width: 94%;
+	height: 94%;
+	border-radius: 17px;
+  }
+  .new-login .new-login-box .left-image {
+	position: absolute;
+	width: 280px;
+	left: -140px;
+	border-radius: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  .new-login .new-login-box .right-content {
+	padding: 30px 50px 55px 170px;
+  }
+  .new-login .new-login-box .right-content .login-area {
+	position: relative;
+	z-index: 3;
+  }
+  .new-login .new-login-box .right-content .nav {
+	position: relative;
+	margin-bottom: 30px;
+	width: 100%;
+	z-index: 3;
+	padding-top: 15px;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 9px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+  .new-login .new-login-box .right-content .nav li {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+  }
+  .new-login .new-login-box .right-content .nav li a {
+	margin: 0px 20px;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #ddd;
+	transition: all 0.3s ease-in;
+  }
+  .new-login .new-login-box .right-content .nav li a i {
+	margin-right: 7px;
+  }
+  .new-login .new-login-box .right-content .nav li a.active, .new-login .new-login-box .right-content .nav li a:hover {
+	color: $base-color;
+  }
+  .new-login .new-login-box .right-content .form-input {
+	position: relative;
+	margin-bottom: 20px;
+  }
+  .new-login .new-login-box .right-content .form-input input {
+	width: 100%;
+	height: 50px;
+	background: none;
+	border-radius: 4px;
+	padding: 0px 30px 0px 70px;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	font-size: 14px;
+  }
+  .new-login .new-login-box .right-content .form-input input:focus {
+	border: 1px solid $base-color;
+  }
+  .new-login .new-login-box .right-content .form-input input::placeholder {
+	color: #999;
+  }
+  .new-login .new-login-box .right-content .form-input i {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0px;
+	color: #fff;
+	background: $base-color;
+	height: 50px;
+	line-height: 50px;
+	width: 50px;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 4px 0px 0px 4px;
+  }
+  .new-login .new-login-box .right-content .styled-checkbox {
+	position: absolute;
+	opacity: 0;
+  }
+  .new-login .new-login-box .right-content .styled-checkbox + label {
+	position: relative;
+	cursor: pointer;
+	padding: 0;
+  }
+  .new-login .new-login-box .right-content .styled-checkbox + label:before {
+	content: "";
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: text-top;
+	width: 20px;
+	height: 20px;
+	background: white;
+	border: 2px solid $base-color;
+  }
+  focus .new-login .new-login-box .right-content .styled-checkbox:focus + label:before {
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+  .new-login .new-login-box .right-content .styled-checkbox:checked + label:before {
+	background: $base-color;
+  }
+  .new-login .new-login-box .right-content .styled-checkbox:disabled + label {
+	color: #b8b8b8;
+	cursor: auto;
+  }
+  .new-login .new-login-box .right-content .styled-checkbox:disabled + label:before {
+	box-shadow: none;
+	background: #ddd;
+  }
+  .new-login .new-login-box .right-content .styled-checkbox:checked + label:after {
+	content: "";
+	position: absolute;
+	left: 5px;
+	top: 9px;
+	background: white;
+	width: 2px;
+	height: 2px;
+	box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+	transform: rotate(45deg);
+  }
+  
+  .login-area .form-forgot-pass {
+	font-size: 14px;
+  }
+  .login-area .form-forgot-pass .right {
+	margin-top: 5px;
+  }
+  .login-area .form-forgot-pass .right i {
+	font-size: 18px;
+	color: $base-color;
+	margin-right: 7px;
+  }
+  .login-area .to-login-page {
+	text-align: right;
+  }
+  .login-area .submit-btn {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	background: $base-color;
+	border: 1px solid $base-color;
+	border: 0px;
+	color: #fff;
+	border-radius: 4px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 20px;
+	transition: all 0.3s ease-in;
+	cursor: pointer;
+  }
+  .login-area .submit-btn:hover {
+	background: none;
+	color: $base-color;
+	border: 1px solid $base-color;
+  }
+  .login-area .social-area {
+	text-align: center;
+	padding-top: 26px;
+  }
+  .login-area .social-area .title {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	display: inline-block;
+	color: $base-color;
+	position: relative;
+  }
+  .login-area .social-area .title::after {
+	position: absolute;
+	content: "";
+	width: 40px;
+	height: 1px;
+	background: rgba(0, 0, 0, 0.2);
+	top: 50%;
+	transform: translateY(-50%);
+	right: 100%;
+	margin-right: 7px;
+  }
+  .login-area .social-area .title::before {
+	position: absolute;
+	content: "";
+	width: 40px;
+	height: 1px;
+	background: rgba(0, 0, 0, 0.2);
+	top: 50%;
+	transform: translateY(-50%);
+	left: 100%;
+	margin-left: 7px;
+  }
+  .login-area .social-area .text {
+	font-size: 16px;
+	font-weight: 600;
+	color: #143250;
+  }
+  .login-area .social-area .social-links {
+	padding-left: 0px;
+  }
+  .login-area .social-area .social-links li {
+	display: inline-block;
+  }
+  .login-area .social-area .social-links li a {
+	height: 50px;
+	padding: 0px 30px;
+	border-radius: 4px;
+	line-height: 50px;
+	display: inline-block;
+	color: #fff;
+	margin: 0px 5px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  .login-area .social-area .social-links li a.facebook {
+	background: #0069f7;
+  }
+  .login-area .social-area .social-links li a.google {
+	background: #d1062c;
+  }
+  .login-area .social-area .social-links li a i {
+	margin-right: 5px;
+  }
+  

@@ -1,0 +1,578 @@
+/*---------------------------
+** Global style
+---------------------------*/
+
+// Custom btn 
+.mybtn1{
+    font-size: 16Px;
+    font-weight: 400;
+    padding: 10px 30px;
+    display: inline-block;
+    color: $white;
+    background: $base-color;
+    border: 1px solid $base-color;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: $transition;
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.15);
+    &:hover{
+      color: $base-color;
+      background: #fff;
+    }
+
+}
+.mybtn2{
+    font-size: 16Px;
+    font-weight: 400;
+    padding: 10px 30px;
+    display: inline-block;
+    color: $white;
+    background: $base-color2;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.15);
+    i{
+        font-size: 14px;
+        margin-left: 0px;
+        opacity: 0;
+        transition: $transition;
+    }
+    &:hover{
+        color: #fff;
+        i{
+            margin-left: 7px;
+            opacity: 1;
+        }
+    }
+
+}
+
+
+.remove-padding{
+    padding: 0px;
+}
+
+.link-banner
+    {
+    position: relative;
+    img {
+        width: 100%;
+    }
+    &:before,
+    &:after {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        pointer-events: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.4);
+        transform: scale(0);
+        transform-origin: top left;
+    }
+    &:after {
+        bottom: 0;
+        right: 0;
+        transform-origin: bottom right;
+    }
+    &:hover:before,
+    &:hover:after {
+        transform: scale(1);
+        opacity: 0;
+        transition-duration: 1.3s;
+    }      
+}
+
+.mt-30{
+    margin-top: 30px;
+}
+
+
+.linked-banner-area{
+    padding: 100px 0px 100px;
+    img{
+        width: 100%;
+    }
+}
+
+// Scroll Dowm Icon
+.scrolldown a {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    left: 50%;
+    @include transform(translateX(-50%));
+    bottom: 50px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    z-index: 9;
+}
+
+.scrolldown a::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sdb10 2s infinite;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb10 {
+    0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+    }
+    40% {
+    opacity: 1;
+    }
+    80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+    }
+    100% {
+    opacity: 0;
+    }
+}
+
+@keyframes sdb10 {
+    0% {
+    transform: translate(0, 0);
+    opacity: 0;
+    }
+    40% {
+    opacity: 1;
+    }
+    80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+    }
+    100% {
+    opacity: 0;
+    }
+}
+
+.mix{
+    display: none;
+}
+
+.remove-col-padding {
+    padding: 0;
+}
+
+.navbar-toggler {
+    border: none!important;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 30px;
+}
+
+.navbar-toggler:focus{
+    outline: 0px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .4rem;
+    padding-left: 0.4rem;
+}
+
+.bottomtotop i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 50%;
+    color: $white;
+    background: $base-color;
+    cursor: pointer;
+    transform: rotate(-90deg);
+    bottom: 50px;
+    right: 15px;
+    box-shadow: 0px 0px 21px  rgba(0, 0, 0, 0.2);
+    z-index: 80;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.section-heading{
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    .title{
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 700;
+        display: inline-block;
+        position: relative;
+        margin-bottom: 0px;
+        padding-bottom: 7px;
+        &::before{
+            position: absolute;
+            content: '';
+            bottom: 0px;
+            left: 0px;
+            height: 2px;
+            width: 100%;
+            background: $base-color;
+        }
+    }
+}
+
+@include keyframes(scaleicon) {
+    0% {
+    transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: $base-color;
+    background-color: $base-color;
+}
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color: $base-color;
+}
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: none;
+}
+.input-field {
+    width: 100%;
+    height: 50px;
+    padding: 0 0px;
+    border-radius: 0px;
+    color: $body-color;
+    margin-bottom: 15px;
+    border: 0px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    @include placeholder-color(#999);
+    &:focus {
+        border: 0px!important;
+        border-bottom: 1px solid $base-color!important;
+    }
+    &.textarea {
+        min-height: 137px;
+        padding: 15px 0px;
+        resize: none;
+    }
+    &.error {
+        border: 0px;
+        border-bottom: 1px solid red;
+    }
+}
+
+.video-play-btn {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: $base-color;
+    border-radius: 50%;
+    position: relative;
+    z-index: 5;
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        left: 50%;
+        top: 50%;
+        @include transform(translateX(-50%) translateY(-50%));
+        display: block;
+        width: 100px;
+        height: 100px;
+        background: $base-color;
+        border-radius: 50%;
+        animation: pulse-border 1500ms ease-out infinite;
+        z-index: -3;
+    }
+    i{
+      @include animate(text-color, 5s, ease-out, infinite);
+      position: inherit;
+      z-index: 9;
+      color: #fff;
+      font-size: 30px;
+      line-height: 100px;
+    }
+}
+
+.email-success {
+    display: block;
+    width: 100%;
+}
+
+@include keyframes(pulse-border) {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .row.reorder-xs {
+        @include transform(rotate(180deg));
+        direction: rtl;
+    }
+    .row.reorder-xs>[class*="col-"] {
+        @include transform(rotate(-180deg));
+        direction: ltr;
+    }
+}
+
+/*-------------------------
+    Preloader Css
+---------------------------*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  z-index: 9999999;
+  @include transition($transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &.hide {
+      opacity: 0;
+      display: none;
+  }
+}
+
+.loader {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 75px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.loader-1 .loader-outter {
+  position: absolute;
+  border: 4px solid $base-color;
+  border-left-color: transparent;
+  border-bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-animation: loader-1-outter 1s cubic-bezier(.42, .61, .58, .41) infinite;
+  animation: loader-1-outter 1s cubic-bezier(.42, .61, .58, .41) infinite;
+}
+
+.loader-1 .loader-inner {
+  position: absolute;
+  border: 4px solid $base-color;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  left: calc(50% - 20px);
+  top: calc(50% - 20px);
+  border-right: 0;
+  border-top-color: transparent;
+  -webkit-animation: loader-1-inner 1s cubic-bezier(.42, .61, .58, .41) infinite;
+  animation: loader-1-inner 1s cubic-bezier(.42, .61, .58, .41) infinite;
+}
+
+@-webkit-keyframes loader-1-outter {
+  0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+
+  100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-1-outter {
+  0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+
+  100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader-1-inner {
+  0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+
+  100% {
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+  }
+}
+
+@keyframes loader-1-inner {
+  0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+  }
+}
+
+
+/*----------------------------------
+Main Breadcrumb Area Start
+------------------------------------*/
+.main-breadcrumb-area{
+	padding: 24px 0px 24px;
+	background: url(../images/bigbanner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    text-align: left;
+    position: relative;
+    .pagetitle{
+        font-weight:  600;
+        color: #fff;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .pages{
+        li{
+            display: inline-block;
+            a{
+                position: relative;
+                margin-right: 30px;
+                font-size: 16px;
+                transition: $transition;
+                color: #fff;
+                &::after{
+                    position: absolute;
+                    content: "\f105";
+                    font-family: "Font Awesome 5 Free"; 
+                    font-weight: 900;
+                    top: 0;
+                    right: -23px;
+                }
+            }
+            &:last-child{
+                a{
+                    margin-right: 0px;
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pb-70{
+    padding-bottom: 70px;
+}
+#map{
+    width: 100%;
+    height: 350px;
+}
+
+/*----------------------------------
+Main Breadcrumb Area End
+------------------------------------*/
+
+/*----------------------------------
+Custom Checkbox Area Start
+------------------------------------*/
+/* The my-custom-checkbox */
+.my-custom-checkbox {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .my-custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid $base-color;
+  }
+  
+  /* On mouse-over, add a grey background color */
+//   .my-custom-checkbox:hover input ~ .checkmark {
+//     background-color: $base-color;
+//   }
+  
+  /* When the checkbox is checked, add a blue background */
+  .my-custom-checkbox input:checked ~ .checkmark {
+    background-color: $base-color;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .my-custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .my-custom-checkbox .checkmark:after {
+    left: 3px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+/*----------------------------------
+Custom Checkbox Area End
+------------------------------------*/

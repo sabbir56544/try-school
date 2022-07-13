@@ -1,0 +1,349 @@
+/*-------------------------------
+  Course Videos Page CSS Start
+--------------------------------*/
+
+.course-video-page {
+  .cv-pr{
+    padding-right: 0px;
+  }
+  .cv-pl{
+    padding-right: 30px;
+  }
+  .video-play-area {
+    iframe {
+      width: 100% !important;
+      height: 600px;
+    }
+  }
+
+  .course-information {
+    .nav {
+      background: #fcfbff;
+      padding: 12px 30px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      li{
+        a{
+          font-size: 16px;
+          line-height: 26px;
+          font-weight: 600;
+          color: $heading-color;
+          &.active{
+            background: $base-color;
+            color: #fff;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+
+    .course-tab-content {
+      padding: 30px 30px 30px;
+
+      .table tr:first-child td {
+        border-top: 0px;
+      }
+
+      tbody {
+        tr {
+          td {
+            min-width: 200px;
+
+            p {
+              font-size: 14px;
+              margin-bottom: 4px;
+            }
+
+            .about-author {
+              .media {
+                img {
+                  max-width: 60px;
+                }
+
+                .media-body {
+                  .name {
+                    font-size: 16px;
+                    font-weight: 600;
+                    display: block;
+                  }
+
+                  span {
+                    font-size: 14px;
+                  }
+                }
+              }
+
+              .social-links {
+                margin-top: 10px;
+
+                li {
+                  display: inline-block;
+
+                  a {
+                    display: inline-block;
+                    width: 25px;
+                    height: 25px;
+                    line-height: 25px;
+                    background: #555;
+                    border-radius: 3px;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 12px;
+                    transition: $transition;
+
+                    &:hover {
+                      background: $base-color;
+                    }
+                  }
+                }
+              }
+
+              .author-bio {
+                margin-top: 20px;
+                font-size: 14px;
+                line-height: 24px;
+              }
+            }
+          }
+        }
+      }
+
+      .content-accordion {
+        .mycard {
+          margin-bottom: 30px;
+
+          .mycard-header {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background: #fcfbff;
+
+            .header-title {
+              padding: 12px 10px 12px 10px;
+              font-size: 14px;
+              border-radius: 3px;
+              display: flex;
+              justify-content: space-between;
+              position: relative;
+
+              .left-area {
+                display: flex;
+
+                .image {
+                  img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                  }
+                }
+
+                .content {
+                  .top-area {
+                    .name {
+                      font-size: 14px;
+                      margin-right: 10px;
+                    }
+
+                    .postby {
+                      font-size: 11px;
+                      background: $base-color;
+                      color: #fff;
+                      padding: 1px 5px;
+                      margin-left: 3px;
+                      border-radius: 3px;
+                    }
+                  }
+
+                  .question {
+                    margin-top: 4px;
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: 600;
+                    margin-bottom: 0px;
+
+                  }
+                }
+              }
+
+              .right-area {
+                .r-a-l-a {
+                  text-align: right;
+                  float: left;
+
+                  .answer {
+                    display: block;
+                    font-size: 14px;
+                  }
+
+                  .add-answer {
+                    font-weight: 600;
+                    display: block;
+                    font-size: 14px;
+                    transition: $transition;
+
+                    i {
+                      margin-right: 2px;
+                      font-size: 13px;
+                    }
+
+                    &:hover {
+                      color: $base-color;
+                    }
+                  }
+                }
+
+                .r-a-r-a {
+                  float: right;
+                  margin-left: 30px;
+
+                  .add-answer {
+                    color: #555;
+                  }
+                }
+              }
+            }
+          }
+
+          .mycard-body {
+            border-left: 1px solid rgba(0, 0, 0, 0.1);
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            background: #fcfbff;
+            .question-answers{
+              .single-answer{
+                padding: 10px 30px ;
+                display: flex;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                &:last-child{
+                  border-bottom: 0px;
+                }
+                .image {
+                  img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    margin-right: 30px;
+                  }
+                }
+
+                .content {
+                  .top-area {
+                    .name {
+                      font-size: 13px;
+                      margin-right: 10px;
+                    }
+                    .date{
+                      font-size: 13px;
+                      line-height: 23px;
+                    }
+                    .postby {
+                      font-size: 11px;
+                      background: $base-color;
+                      color: #fff;
+                      padding: 1px 5px;
+                      margin-left: 3px;
+                      border-radius: 3px;
+                    }
+                  }
+
+                  .question {
+                    margin-top: 4px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-bottom: 0px;
+
+                  }
+                }
+              }
+            }
+            .announcement-content{
+              font-size: 14px;
+              line-height: 24px;
+              padding: 30px 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .course-video-list-area{
+    padding-top: 15px;
+    .content-accordion {
+      .mycard {
+        margin-bottom: 10px;
+
+        .mycard-header {
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          background: #fcfbff;
+
+          .header-title {
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 3px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            .left-area {
+              .content {
+                .top-area {
+                  .seson {
+                    font-size: 14px;
+                    line-height: 24px;
+                  }
+                }
+
+                .title {
+                  font-size: 16px;
+                  line-height: 26px;
+                  font-weight: 600;
+                  margin-bottom: 0px;
+
+                }
+              }
+            }
+          }
+        }
+
+        .mycard-body {
+          border-left: 1px solid rgba(0, 0, 0, 0.1);
+          border-right: 1px solid rgba(0, 0, 0, 0.1);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          // background: #fcfbff;
+            .single-video{
+              padding: 8px 10px;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+              &:last-child{
+                border-bottom: 0px;
+              }
+              .top-heading-area{
+                display: flex;
+                .my-custom-checkbox{
+                  top: 2px;
+                }
+                .title{
+                  padding-left: 25px;
+                  font-size: 14px;
+                  font-weight: 400;
+                  color: $heading-color;
+                  &:hover{
+                    text-decoration: underline;
+                  }
+                }
+              }
+              .bottom-area{
+                padding-top: 4px;
+                font-size: 14px;
+                color: #777;
+              }
+            }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/*-------------------------------
+  Course Videos Page CSS End
+--------------------------------*/

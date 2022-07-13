@@ -1,0 +1,310 @@
+
+.hero-area .intro-content .slider-content{
+    text-align: right;
+}
+
+.mainmenu-area .my-navbar .logoarea .search-form input {
+   text-align: right;
+}
+
+.mainmenu-area .my-navbar .logoarea .search-form button {
+    right: auto;
+    left: 0px;
+}
+.single-course .content{
+    text-align: right;
+}
+.single-course .content .author,
+.single-course .botttom-area,
+.faq-section,
+.single-blog .content,
+.footer-widget.recent-post-widget .post-list li .post,
+.single-category-sp .content,
+.categories-page,
+.main-breadcrumb-area .pages
+{
+    direction: rtl;
+}
+
+.single-course .author img {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.become-author-section .content,
+.faq-section .section-heading .title,
+.faq-section .accordion .card .card-header button,
+.single-blog .content,
+.single-category-sp .content,
+.single-course-long .content,
+.categories-page .left-aside .accordion .mycard .mycard-body .custom-control,
+.categories-page .left-aside .accordion .mycard .mycard-header span,
+.main-breadcrumb-area .pages,
+.serch-widget
+{
+    text-align: right;
+}
+.faq-section .accordion .card .card-header button i {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.faq-section .accordion .card .card-body{
+    text-align: right;
+}
+
+.faq-section .accordion .card .card-header button i{
+    transform: rotate(180deg);
+}
+.faq-section .right-image .video-play-btn i {
+    margin-left: auto;
+    margin-right: -11px;
+}
+
+.single-blog .content .top-meta li {
+    margin-right: 0px;
+    margin-left: 10px;
+}
+.footer-info-area,
+.faq-section .section-heading .title,
+.faq-section .section-heading
+{
+    text-align: right;
+}
+
+.footer .fotter-social-links ul,
+.footer-widget
+{
+    text-align: right;
+}
+.footer-widget.recent-post-widget .post-list li .post .post-img {
+    margin-right: 0px;
+    margin-left: 15px;
+}
+
+.single-category-sp .content .content-inner .left img {
+    margin-right: 0px;
+    margin-left: 20px;
+}
+.single-course-long .content .right-area{
+    text-align: left;
+}
+
+
+.single-course-long .content {
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+
+.categories-page .left-aside .accordion .mycard .mycard-body .custom-control{
+    padding-left: 0px;
+    padding-right: 1.5rem;
+}
+
+
+.categories-page .left-aside .accordion .mycard .mycard-body .custom-control-label::before {
+    left: auto;
+    right: -1.5rem;
+}
+.categories-page .left-aside .accordion .mycard .mycard-body .custom-control-label::after {
+    left: auto;
+    right: -1.5rem;
+}
+
+.categories-page .left-aside .accordion .mycard .mycard-header span i {
+    right: auto;
+    left: 0px;
+}
+
+.main-breadcrumb-area .pages li a {
+    margin-right: 0px;
+    margin-left: 30px;
+    
+}
+
+.main-breadcrumb-area .pages li a::after {
+    transform: rotate(180deg);
+    right: auto;
+    left: -23px;
+}
+
+.main-breadcrumb-area .pages li a::after {
+    top: -2px;
+}
+.course-details-page .details-top-jumboron{
+    text-align: right;
+}
+.c-details-nav,
+.course-details-page .details-main-content .what-you-learn
+{
+    text-align: right;
+    direction: rtl;
+}
+.course-details-page .details-main-content .what-you-learn .title{
+    text-align: right;
+}
+
+.course-details-page .details-main-content .what-you-learn{
+    text-align: right;
+}
+
+.course-details-page .details-main-content .what-you-learn .learn-list{
+    text-align: right;
+}
+
+element.style {
+}
+.course-details-page .details-main-content .what-you-learn .learn-list li:last-child {
+    margin-bottom: 0px;
+}
+.course-details-page .details-main-content .what-you-learn .learn-list li {
+    padding-left: 0px;
+    padding-right: 35px;
+}
+.course-details-page .details-main-content .what-you-learn .learn-list li::before {
+    left: auto;
+    right: 10px;
+}
+
+.course-details-page .details-main-content .requirements-list,
+.course-details-page .details-main-content .course-review-area .header-title,
+.course-details-page .details-main-content .course-description,
+.write-comment-area textarea,
+#coment-area .review-area .star-area .star-list
+{
+    text-align: right;
+}
+.course-details-page .details-main-content .requirements-list,
+.course-details-page .details-main-content .course-description
+{
+    direction: rtl;
+}
+.course-details-page .details-main-content .requirements-list ul {
+    padding-left: 0px;
+    padding-right: 20px;
+}
+
+#coment-area .mybtn1{
+    display: block;
+    margin-left: auto;
+}
+.course-details-page .details-main-content .right-content{
+    text-align: right;
+    direction: rtl;
+}
+.course-details-page .details-main-content .right-content2 .action-buttons a{
+    text-align: right;
+    direction: rtl;
+}
+
+.course-details-page .details-main-content .right-content2 .action-buttons a i {
+    margin-right: 0px;
+    margin-left: 6px;
+}
+
+.feature-section .feature-section-inner .single-feature{
+    direction: rtl;
+}
+.top-header .right-area ul li ul li{
+    text-align: right;
+}
+.feature-section .feature-section-inner .single-feature .left-icon {
+    margin-right: 0px;
+    margin-left: 30px;
+}
+.feature-section .feature-section-inner .single-feature .right-content{
+    text-align: right;
+}
+
+.form-control,
+input,
+textarea
+{
+    text-align: right;
+}
+.form-control[type="email"],
+input[type="email"]
+{
+    text-align: left;
+}
+label{
+    display: block;
+    text-align: right;
+}
+.user-dashboard .user-dashboard-menu-area .heading-title{
+    text-align: right;
+}
+
+.course-details-page .details-main-content .course-review-area .user-review-area .user-single-review{
+    direction: rtl;
+}
+
+.course-details-page .details-main-content .course-review-area .user-review-area .user-single-review .review-right{
+    text-align: right;
+}
+.course-details-page .details-main-content .course-review-area .user-review-area .user-single-review .review-left{
+    text-align: right;
+}
+.course-details-page .details-main-content .course-content .title{
+    text-align: right;
+}
+
+.contact-us .right-area .contact-info{
+    direction: rtl;
+}
+.contact-us .right-area .contact-info .left .icon {
+    margin-right: 0px;
+    margin-left: 20px;
+}
+
+.contact-us .right-area .contact-info .content{
+    text-align: right;
+}
+.about .about-info,
+.categori,
+.recent-post-widget
+{
+    text-align: right;
+    direction: rtl;
+}
+.categori .categori-list li a:hover, .categori .categori-list li a.active {
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+.blog .blog-box .details,
+.blog .blog-box .details .content,
+.tags
+{
+    text-align: right;
+}
+
+.recent-post-widget .post-list li .post .post-img {
+    margin-right: 0px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
